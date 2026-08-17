@@ -1,0 +1,279 @@
+{
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/1.tmx": {
+            "scale": 0.267578125,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1408.9343065693433,
+                "y": 362.51094890510944
+            }
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/1.tmx#mine_loose_stones": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/1.tmx#mine_spike_fg_clear": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/Cryst_Shaman_Ext_0003_1.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/CrystalWall.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/Mines_Layered_0044_a.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/atlas0 #26003.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/brk_Crystal1.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/cryst_cave_0001_Layer-5.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/cryst_cave_0003_Layer-7.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/crystal_spike_shadow.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/crystalpeaks.tmx": {
+            "scale": 0.267578125,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1408.9343065693433,
+                "y": 2188.1459854014597
+            }
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/crystalpeaks.tmx#mine_loose_stones": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/crystalpeaks.tmx#mine_spike_fg_clear": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/far_bg_mines_plats_0003_2.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/far_bg_mines_plats_0004_1.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/flame.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/fly.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/mine_break_wall_03.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/mine_crystal_08.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/mine_entrance_0020_13.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/mine_globe_02.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/mine_spike_02.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/mines_additions_03_0002_a.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/mines_metal_thin_floors_0004_a.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/shelf_tall.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/summit_crystals_0002_2.tsx": {
+            "scaleInDock": 1
+        },
+        "Cryst_Shaman_Ext_0003_1.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "CrystalWall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Grimm_flame_ball_particle.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Mines_Layered_0043_a.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Mines_Layered_0044_a.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "atlas0 #26003.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "blue_butterfly.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "brk_Crystal1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "cryst_cave_0001_Layer-5.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "cryst_cave_0003_Layer-7.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "crystal_spike_fg_02.tsx": {
+            "dynamicWrapping": false
+        },
+        "crystal_spike_shadow.tsx": {
+            "scaleInDock": 1
+        },
+        "crystalpeaks.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 11978.787878787878,
+                "y": 9146.969696969696
+            }
+        },
+        "crystalpeaks.tmx#mine_loose_stones": {
+            "scaleInDock": 1
+        },
+        "crystalpeaks.tmx#mine_spike_fg_clear": {
+            "scaleInDock": 1
+        },
+        "far_bg_mines_plats_0002_3.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "far_bg_mines_plats_0003_2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "far_bg_mines_plats_0004_1.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "flame.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "fly.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "fog.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "grimm_particle_flame.tsx": {
+            "dynamicWrapping": false
+        },
+        "mine_break_wall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "mine_break_wall_03.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "mine_crystal_08.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "mine_entrance_0020_13.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "mine_globe_02.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "mine_loose_stones.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "mine_spike_02.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "mine_spike_fg_clear.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "mines_additions_03_0002_a.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "mines_metal_thin_floors_0004_a.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "plats.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "shelf_tall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "summit_crystals_0002_2.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        }
+    },
+    "last.imagePath": "C:/Users/Asus/Documents/CrystalPeaks/Assets/Particles & Effects",
+    "map.height": 2000,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 8,
+    "map.tileWidth": 8,
+    "map.width": 3000,
+    "openFiles": [
+    ],
+    "project": "map1.tiled-project",
+    "recentFiles": [
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/1.tmx",
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/flame.tsx",
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/crystalpeaks.tmx",
+        "C:/Users/Asus/Documents/HollowKnight/assets/maps/fly.tsx",
+        "fly.tsx",
+        "flame.tsx",
+        "crystalpeaks.tmx",
+        "shelf_tall.tsx",
+        "blue_butterfly.tsx",
+        "brk_Crystal1.tsx",
+        "mine_loose_stones.tsx",
+        "Cryst_Shaman_Ext_0003_1.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 8,
+        "width": 8
+    },
+    "tileset.type": 0
+}

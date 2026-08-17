@@ -1,0 +1,956 @@
+fonts/TrajanPro-Bold.otf
+libgdx.png
+maps/0c02df4c-10c0-47fe-a0fd-d98cdfbce267.tsx
+maps/5d17ab60-9315-43c6-9fe1-753c88b56434.tsx
+maps/Cryst_Shaman_Ext_0003_1.tsx
+maps/CrystalWall.tsx
+maps/Grimm_flame_ball_particle.tsx
+maps/Mines_Layered_0043_a.tsx
+maps/Mines_Layered_0044_a.tsx
+maps/assets/0c02df4c-10c0-47fe-a0fd-d98cdfbce267.png
+maps/assets/5d17ab60-9315-43c6-9fe1-753c88b56434.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/Cryst_Shaman_Ext_0003_1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/Hallownest_s Crown/summit_crystals_0002_2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/Hallownest_s Crown/summit_crystals_0003_1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/Hallownest_s Crown/summit_spikes_0000_4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/Hallownest_s Crown/summit_spikes_0001_3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/Mines_Layered_0043_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/Mines_Layered_0044_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/Mines_Layered_0053_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/Mines_Layered_0064_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/Mines_Layered_0082_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/Mines_Layered_0083_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/SpriteAtlasTexture-Crystal_Spikes (Group 1)-1024x512-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/atlas0 #26003.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/brk_Crystal1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/cryst_cave_0001_Layer-5.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/cryst_cave_0003_Layer-7.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/crystal_shot.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/crystal_spike_fg_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/crystal_spike_shadow.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/crystal_spike_short.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/far_bg_mines_plats_0000_5.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/far_bg_mines_plats_0001_4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/far_bg_mines_plats_0002_3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/far_bg_mines_plats_0003_2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/far_bg_mines_plats_0004_1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/laer_bug_scenery_bit.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_break_wall.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_break_wall_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_break_wall_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_crystal_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_crystal_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_crystal_08.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_entrance_0020_13.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_floor_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_globe_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_globe_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_loose_stones.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_platform_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_small_crystal_break_0009_c.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_spike_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_spike_02_bg.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_spike_FG_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_spike_fg_clear.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_wall_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_wall_01_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_wall_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_wall_02_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_wall_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mine_wall_03_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_additions_02_0000_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_additions_02_0005_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_additions_02_0010_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_additions_03_0002_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_floor_rocks_0003_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_metal_thin_floors_0001_a #3014.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_metal_thin_floors_0001_a #7804.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_metal_thin_floors_0001_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_metal_thin_floors_0002_a #32824.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_metal_thin_floors_0002_a #80624.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_metal_thin_floors_0002_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_metal_thin_floors_0004_a #32832.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_metal_thin_floors_0004_a #80632.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/mines_metal_thin_floors_0004_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/shelf_short.png
+maps/assets/Architecture & Environment/Area specfic architecture/Crystal Peak/shelf_tall.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/1505-0@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/2163-1@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/2163-2@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/2163-3@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/2163-4@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/2163-5@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/2163-7@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/2165-1@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/2165-3@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/2165-4@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/2165-5@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/2953-0@2x.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/Shaman_Hut_Ruin.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/Shaman_Hut_Ruin_Inside.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/SpriteAtlasTexture-Crossroads_Witch_doctor-1024x1024-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/SpriteAtlasTexture-Shaman-4096x2048-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/atlas0 #077020.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/bone_bench.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/bone_bench_lit.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/brazier_flame0000.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/brazier_top.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/hut_0000_Hue_Saturation-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/hut_0001_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/hut_0002_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/hut_0003_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/hut_colour.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/outside_arena_0000_Layer-5.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/outside_arena_0001_Layer-6.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/outside_arena_0002_Layer-7.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/outside_arena_0003_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/outside_arena_0004_Layer-8.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/outside_arena_0006_Layer-4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/shaman_hut_lit.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/shaman_one_way.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/shaman_temple_exterior.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall2_0000_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall2_0001_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall2_0002_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall2_0003_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall3_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall3_0001_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall4_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall4_0001_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall_0001_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall_0002_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall_0003_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wall_0004_Layer-4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_BG_skull_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_BG_skull_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_BG_skull_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_BG_wall_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_BG_wall_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_FG_pole_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_FG_pole_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_FG_skulls.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_FG_string_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_FG_string_02_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_FG_string_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_FG_string_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_FG_string_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_bone_pile.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_floor_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_floor_01_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_floor_01_0001_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_floor_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_floor_02_0000_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_floor_02_0001_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_floor_02_0002_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_floor_03_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_floor_03_0001_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_floor_03_0002_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_floor_03_0003_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_frond_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_01_base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_01_top.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_02_base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_02_top_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_03_base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_03_top1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_03_top2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_03_top3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_04_base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_bits_0000_pole_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_pole_bits_0002_head_mask.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_roof_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_roof_01_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_roof_01_0001_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_roof_01_0002_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_roof_01_0003_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_roof_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_roof_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_roof_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_roof_04_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_roof_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_roof_05_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_01_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_01_0000_Layer-1_skull_pile.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_01_0001_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_01_0002_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_01_0003_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_02_0000_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_02_0001_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_02_0002_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_03_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_07.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_08.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_09.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_10_0000_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_10_0001_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_skull_10_0002_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_03_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_FG_04_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_FG_04_0001_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_FG_04_0002_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_FG_05_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_FG_05_0001_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_FG_05_0002_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_string_FG_05_0003_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_wall_02_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_wall_02_0001_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_wall_02_0002_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_wall_02_0003_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_wall_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_wall_07.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_wall_09.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_wall_12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Ancestral Mound/wd_wall_12_BG.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/BG_egg_07_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/BG_egg_07_0001_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/BG_egg_07_0002_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/BG_egg_07_0003_Layer-4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/BG_egg_07_0004_Layer-6.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/BG_egg_07_0005_Layer-0_0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/BG_egg_07_0006_Layer-5.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_ball.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_bone_pile.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_01_0000_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_01_0001_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_01_0002_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_02_0000_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_02_0001_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_02_0002_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_02_0003_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_03_0000_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_03_0001_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_03_0002_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_03_0003_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_04_0000_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_04_0001_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_04_0002_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_04_0003_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_05_0000_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_05_0001_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_07_0000_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_07_0000_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_07_0001_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_07_0002_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_07_0003_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_07_0004_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_09_0000_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_09_0001_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_09_0002_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_09_0003_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_09_0004_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_09_0005_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_10_0000_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_10_0001_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_10_0002_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_10_0003_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_10_0004_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_11_0000_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_11_0001_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_11_0002_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_eggs_11_0003_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_platform.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_post_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_post_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_rocks.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_rocks_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FG_webs.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FK_break__0000_wall_default.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FK_break__0001_wall_half_break.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FK_break__0002_break_debris_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FK_break__0003_break_debris_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FK_break__0004_wall_break.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FK_break__0005_wall_back.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/FK_break__0006_wall_metal.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Infected Crossroads/SpriteAtlasTexture-Infected-1024x1024-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Infected Crossroads/vine_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Infected Crossroads/vine_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Infected Crossroads/vine_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Infected Crossroads/vine_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Infected Crossroads/vine_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Shop Counter.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/SpriteAtlasTexture-Crossroads (Group 0)-4096x4096-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/SpriteAtlasTexture-Crossroads (Group 1)-32x128-fmt4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/SpriteAtlasTexture-Fossil-2048x2048-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/SpriteAtlasTexture-Grub-2048x4096-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/SpriteAtlasTexture-Grub_Wall-1024x1024-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/SpriteAtlasTexture-Guardhouse-1024x2048-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/SpriteAtlasTexture-Well-512x1024-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/SpriteAtlasTexture-F_Boss_Stone-1024x1024-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/SpriteAtlasTexture-Temple Int-4096x2048-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/SpriteAtlasTexture-Temple_ext-512x1024-fmt12.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/_0023_abyss_02_final_boss.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/ancient_wall_roof_final_boss.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/atlas0 #020014.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door_BG.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door_chunks_0000_4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door_chunks_0001_3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door_chunks_0002_2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door_chunks_0003_1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door_mid.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door_pieces_0000_mask_teacher.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door_pieces_0001_mask_beast.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door_pieces_0002_mask_watcher.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door_pieces_0003_boss_door_back_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_door_pieces_0004_boss_door_back_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_room_corner.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/boss_room_corner_right.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/chain_base_0002_base_break2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/chain_base_0003_base_break1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/chain_base_0004_base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_FG_chain.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_chain.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_pinth_0000_mid_plinth_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_pinth_0001_mid_plinth_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_rag.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0000_fg_sil.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0001_lit-floor_bench.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0002_bench_lit.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0003_bench_unlit.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0006_bench_back.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0007_right_door.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0008_right_door_BG.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0009_dark_floor.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0018_left_door_FG.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0019_left_door_stones_fg.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0020_left_door_stones_mid.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0021_left_door_stones.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0022_left_door_back.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0023_left_door_mid.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0024_floor_symbol_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0025_floor_symbol_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0026_floor_symbol_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0026_floor_symbol_01_large.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0027_boss_floor_core.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0027_boss_floor_core_mid.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0028_boss_floor_FG.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0029_boss_floor_mid.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0030_boss_floor_main.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0031_boss_wall_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0031_boss_wall_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0032_boss_bg1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/final_boss_room_0033_boss_bg2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/templ_lamp_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_ext_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_ext_BG_0000_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_ext_BG_0001_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_ext_BG_0002_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_ext_floor_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_ext_floor_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_fence.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_fg_fence.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_int_FG_wall.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_int_door.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_int_egg_outside2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_int_stone.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_int_stone_FG.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_lamp_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_lamp_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_lamp_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/temple_plat_wall_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_left_0000_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_left_0001_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_left_0002_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_left_0003_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_left_0004_Layer-4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_left_0005_Layer-5.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_right_0000_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_right_0001_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_right_0002_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_right_0003_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_right_0004_Layer-4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_right_0005_Layer-5.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_right_0006_Layer-7.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/tmpl_right_0007_Layer-6.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/Temple of the Black Egg/vault_ext_lit.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/atlas0 #00000302.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/atlas0 #010020.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/atlas0 #50300302.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/atlas0 #509020.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/barrel shelf bg.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/barrel_fall0000.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_BG_bone_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_BG_egg_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_BG_egg_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_BG_egg_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_BG_well_shaft.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_FG_bone_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_FG_bone_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_FG_bone_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_FG_bone_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_FG_bone_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_FG_bone_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_FG_bone_07.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_FG_bone_08.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_FG_bone_09.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_FG_rock_20.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_arch_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_arch_fence_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_archbase_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_archbase_01_long.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_archway_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_archway_01_broken.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_archway_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_archway_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_archway_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_archway_04_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_big_roof_0000_07.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_big_roof_0001_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_big_roof_0002_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_big_roof_0004_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_big_roof_0005_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_big_roof_0006_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_bone_wall_0000_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_bone_wall_0001_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_bone_wall_0002_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_bone_wall_0003_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_bone_wall_0004_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_bone_wall_0005_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_bridge_collapse_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_bridge_collapse_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_broken_wall.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_broken_wall_FG.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_chain.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_dead_guardians_01_0000_08.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_dead_guardians_01_0001_07.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_dead_guardians_01_0002_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_dead_guardians_01_0003_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_dead_guardians_01_0004_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_dead_guardians_01_0005_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_dead_guardians_01_0006_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_dead_guardians_01_0007_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_egg_guard_corpse_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_egg_guard_corpse_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_egg_guard_corpse_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_egg_guard_corpse_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_floor_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_floor_highway_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_floor_highway_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_lift_cords soft.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_lift_cords.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_lift_top.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_mid_wall_detail_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_mid_wall_detail_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_mid_wall_detail_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_mid_wall_detail_lamp_l.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_mid_wall_detail_lamp_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_pillar_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_pillar_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_room_BG_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_room_BG_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_room_beam_glow.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_tollbooth_lamp.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_vert_strut_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_wall_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_wall_01_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_wall_01_solid.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_wall_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_well_brick_l.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cd_well_brick_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cell_BG.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cell_floor.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cell_lifts0000.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/cell_sil.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/charm_shop_0001_Color-Balance-1-copy-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/crossraods_arch_mask.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/crossroads_03_mask.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/crossroads_false_door_0000_4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/crossroads_false_door_0001_3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/crossroads_false_door_0002_2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/crossroads_false_door_0003_1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/deepnest_blur_hive.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/fg_ground_faces.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_01_0000_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_01_0001_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_01_0002_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_01_0003_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_01_0004_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_01_0005_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_02_0000_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_02_0001_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_02_0002_Layer-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_02_0003_Layer-4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_02_0004_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_03_0000_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_03_0001_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_03_0002_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_03_0003_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_03_0004_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_04_0000_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_04_0001_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_04_0002_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_04_0003_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_04_0004_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_04_0005_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_05_0000_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_05_0001_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_05_0002_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_05_0003_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_06_0001_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_06_0002_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/floor_FG_rock_06_0003_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/gome_fossil_layered_0000_9.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/gome_fossil_layered_0002_7.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/gome_fossil_layered_0003_6.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/gome_fossil_layered_0005_4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/gome_fossil_layered_0006_3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/gome_fossil_layered_0007_2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/gome_fossil_layered_0008_1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0000_Color-Balance-1-copy.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0001_Color-Balance-1-copy-6.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0002_Color-Balance-1-copy-5.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0003_Color-Balance-1-copy-23.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0004_Color-Balance-1-copy-7.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0005_Color-Balance-1-copy-9.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0006_Color-Balance-1-copy-11.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0008_Color-Balance-1-copy-15.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0010_Color-Balance-1-copy-19.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0011_Color-Balance-1-copy-21.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0012_Color-Balance-1-copy-25.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0013_Color-Balance-1-copy-27.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0014_Color-Balance-1-copy-29.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0015_Color-Balance-1-copy-31.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0016_Color-Balance-1-copy-33.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0017_Color-Balance-1-copy-35.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0018_Color-Balance-1-copy-37.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0019_Color-Balance-1-copy-39.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/grub_homes_0020_Color-Balance-1-copy-41.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/guard_clubs.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/guard_table_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/guard_table_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/guard_table_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_01_layered_0000_Layer-2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_01_layered_0001_Layer-4.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_01_layered_0002_Layer-1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_01_layered_0003_Layer-0.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_01_layered_0004_Layer-5.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_02_layered_0000_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_02_layered_0001_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_02_layered_0002_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_02_layered_0003_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_FG_0003_Layer-81.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_FG_0007_Layer-78.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_FG_0009_Layer-76.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_FG_0011_Layer-74.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_FG_0012_Layer-73.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_FG_0014_Layer-71.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/highway_FG_0015_Layer-70.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/lamp_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/lamp_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/pilgrim_path_sign.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_BG_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_BG_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_FG_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_FG_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_FG_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_FG_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_FG_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_right_left2_BG_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_right_left2_BG_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_right_left3_BG_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_right_left3_BG_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_right_left3_BG_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_right_left3_BG_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_right_left_BG_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_right_left_BG_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/rocks_right_left_BG_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/ruin_village_thing_0000_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/ruin_village_thing_0001_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/ruin_village_thing_0002_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/sactx-0-2048x1024-DXT5_BC3-Crossroads_Well-828c5708.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/salubra_ext_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/salubra_ext_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/shop_0000_a.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/shop_0001_FG.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/shop_0002_back.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/shop_0003_Color-Balance-1-copy.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/shop_0004_Color-Balance-1-copy-3.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_02_base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_03_base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_04_base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_06_base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_07.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_07_base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_08.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/statue_08_base.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/toll_booth_front_small.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/tollbooth_b1_0000_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/tollbooth_b1_0001_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/tollbooth_b1_0002_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/tollbooth_b3_0000_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/tollbooth_b3_0001_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/tollbooth_b3_0002_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/tollbooth_bottom_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/tollbooth_bottom_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/tollbooth_top1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/tollbooth_top2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_BG_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_BG_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_BG_03.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_BG_04.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_BG_05.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_BG_06.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_BG_07.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_FG_fence.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_fence_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_floor_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_lamp_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_lamp_02.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/vil_sign_01.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/well_bricks_r.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/well_extension_0000_2.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/well_extension_0001_1.png
+maps/assets/Architecture & Environment/Area specfic architecture/Forgotten Crossroads/well_extension_02.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimm_flame_ball_particle.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimm_nightmare_flame_pillar0004.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimm_nightmare_flame_pillar0005.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimm_nightmare_flame_pillar0006.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimm_nightmare_flame_pillar0007.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimm_nightmare_flame_pillar0008.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimm_nightmare_flame_pillar0009.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimm_nightmare_flame_pillar0010.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0000.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0001.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0002.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0003.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0004.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0005.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0006.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0007.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0008.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0009.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0010.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0011.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0012.png
+maps/assets/Particles & Effects/Fire & Smoke/Grimmflame0013.png
+maps/assets/Particles & Effects/Fire & Smoke/SpriteAtlasTexture-Flame-512x256-fmt12.png
+maps/assets/Particles & Effects/Fire & Smoke/SpriteAtlasTexture-Flame_Pillar_Large-512x256-fmt4.png
+maps/assets/Particles & Effects/Fire & Smoke/SpriteAtlasTexture-Grimmflame-512x256-fmt12.png
+maps/assets/Particles & Effects/Fire & Smoke/SpriteAtlasTexture-candle_flame-256x128-fmt12.png
+maps/assets/Particles & Effects/Fire & Smoke/candle_flame0000.png
+maps/assets/Particles & Effects/Fire & Smoke/candle_flame0001.png
+maps/assets/Particles & Effects/Fire & Smoke/candle_flame0002.png
+maps/assets/Particles & Effects/Fire & Smoke/candle_flame0003.png
+maps/assets/Particles & Effects/Fire & Smoke/candle_flame0004.png
+maps/assets/Particles & Effects/Fire & Smoke/candle_flame0005.png
+maps/assets/Particles & Effects/Fire & Smoke/ember_particle.png
+maps/assets/Particles & Effects/Fire & Smoke/ember_particle_round.png
+maps/assets/Particles & Effects/Fire & Smoke/flame_core0000.png
+maps/assets/Particles & Effects/Fire & Smoke/flame_core0001.png
+maps/assets/Particles & Effects/Fire & Smoke/flame_core0002.png
+maps/assets/Particles & Effects/Fire & Smoke/flame_core0003.png
+maps/assets/Particles & Effects/Fire & Smoke/grimm_particle_flame.png
+maps/assets/Particles & Effects/Fire & Smoke/grimm_smoke.png
+maps/assets/Particles & Effects/Fire & Smoke/torch0000.png
+maps/assets/Particles & Effects/Fire & Smoke/torch0001.png
+maps/assets/Particles & Effects/Fire & Smoke/torch0002.png
+maps/assets/Particles & Effects/Fire & Smoke/torch0003.png
+maps/assets/Particles & Effects/Fire & Smoke/torch0004.png
+maps/assets/Particles & Effects/Fire & Smoke/torch0005.png
+maps/assets/Particles & Effects/Fire & Smoke/torch0006.png
+maps/assets/Particles & Effects/Fire & Smoke/torch0007.png
+maps/assets/Particles & Effects/Fire & Smoke/torch_glow_01.png
+maps/assets/Particles & Effects/Fire & Smoke/torch_glow_02.png
+maps/assets/Particles & Effects/Fire & Smoke/torch_glow_03.png
+maps/assets/Particles & Effects/Fire & Smoke/waterways_fog.png
+maps/assets/Particles & Effects/atlas0 #0070056.png
+maps/assets/Particles & Effects/atlas0 #5060056.png
+maps/assets/Particles & Effects/atlas0 #5330016.png
+maps/assets/Particles & Effects/blue_butterfly.png
+maps/assets/Particles & Effects/gg_vignette_white.png
+maps/assets/Particles & Effects/glow_bug_01.png
+maps/assets/Particles & Effects/shop_lamp_bug0000.png
+maps/assets/Particles & Effects/shop_lamp_bug0001.png
+maps/assets/Particles & Effects/shop_lamp_bug0002.png
+maps/assets/Particles & Effects/shop_lamp_bug0003.png
+maps/assets/Particles & Effects/shop_lamp_bug0004.png
+maps/assets/Particles & Effects/shop_lamp_bug0005.png
+maps/assets/Particles & Effects/shop_lamp_bug0006.png
+maps/assets/Particles & Effects/shop_lamp_bug0007.png
+maps/assets/tunnel_FG_layers_0000_Layer-1.png
+maps/assets/tunnel_FG_layers_0001_Layer-2 #34718.png
+maps/assets/tunnel_FG_layers_0002_Layer-3 #82405.png
+maps/assets/tunnel_FG_layers_0002_Layer-3.png
+maps/assets/wall_01.png
+maps/assets/wall_02_r.png
+maps/assets/wall_07_0000_04.png
+maps/assets/wall_07_0001_03.png
+maps/assets/wall_07_0002_02.png
+maps/assets/wall_07_0003_01.png
+maps/assets/wall_08_0000_04.png
+maps/assets/wall_08_0001_03.png
+maps/assets/wall_08_0002_02.png
+maps/assets/wall_08_0003_01.png
+maps/assets/wall_black_l.png
+maps/assets/wall_black_r.png
+maps/atlas0 #26003.tsx
+maps/blue_butterfly.tsx
+maps/brk_Crystal1.tsx
+maps/cd_BG_egg_04.tsx
+maps/cd_big_roof_0002_05.tsx
+maps/cd_big_roof_0004_03.tsx
+maps/cd_broken_wall.tsx
+maps/cd_mid_wall_detail_lamp_r.tsx
+maps/cd_tollbooth_lamp.tsx
+maps/cd_wall_04.tsx
+maps/charm_shop_0001_Color-Balance-1-copy-3.tsx
+maps/crossroads_false_door_0001_3.tsx
+maps/cryst_cave_0001_Layer-5.tsx
+maps/cryst_cave_0003_Layer-7.tsx
+maps/crystal_spike_fg_02.tsx
+maps/crystal_spike_shadow.tsx
+maps/crystalpeaks.tmx
+maps/deepnest_blur_hive.tsx
+maps/far_bg_mines_plats_0002_3.tsx
+maps/far_bg_mines_plats_0003_2.tsx
+maps/far_bg_mines_plats_0004_1.tsx
+maps/flame.tsx
+maps/floor_FG_rock_04_0002_04.tsx
+maps/floor_FG_rock_04_0005_01.tsx
+maps/fly.tsx
+maps/grimm_particle_flame.tsx
+maps/grub_homes_0002_Color-Balance-1-copy-5.tsx
+maps/hamid.tiled-session
+maps/highway_FG_0003_Layer-81.tsx
+maps/hut_0000_Hue_Saturation-2.tsx
+maps/laer_bug_scenery_bit.tsx
+maps/map1.tiled-project
+maps/map1.tiled-session
+maps/mine_break_wall.tsx
+maps/mine_break_wall_02.tsx
+maps/mine_break_wall_03.tsx
+maps/mine_crystal_08.tsx
+maps/mine_entrance_0020_13.tsx
+maps/mine_globe_01.tsx
+maps/mine_globe_02.tsx
+maps/mine_loose_stones.tsx
+maps/mine_small_crystal_break_0009_c.tsx
+maps/mine_spike_02.tsx
+maps/mine_spike_fg_clear.tsx
+maps/mines_additions_03_0002_a.tsx
+maps/mines_metal_thin_floors_0004_a.tsx
+maps/plats.tsx
+maps/shelf_tall.tsx
+maps/statue_01.tsx
+maps/statue_02_base.tsx
+maps/statue_04.tsx
+maps/statue_08.tsx
+maps/summit_crystals_0002_2.tsx
+maps/summit_spikes_0001_3.tsx
+maps/temple_ext_floor_02.tsx
+maps/temple_lamp_02.tsx
+maps/vil_BG_02.tsx
+maps/vil_BG_05.tsx
+maps/wd_FG_string_03.tsx
+maps/wd_floor_03_0002_Layer-2.tsx
+maps/wd_roof_01.tsx
+maps/wd_roof_01_0000_Layer-1.tsx
+maps/wd_string_FG_04_0000_Layer-1.tsx
+maps/well_extension_0001_1.tsx
+music/Crossroads.mp3
+music/CrystalPeaks.mp3
+music/FalseKnight.mp3
+music/MainMenu.mp3
+music/Victory.mp3
+saves/slot1.json
+sfx/damage.wav
+sfx/focus.wav
+sfx/nail_slash.wav
+sfx/soul_gain.wav
+sfx/zote/zote_1.wav
+sfx/zote/zote_2.wav
+sfx/zote/zote_3.wav
+sfx/zote/zote_4.wav
+textures/Charms/Dashmaster - _0011_charm_generic_03.png
+textures/Charms/Heavy Blow - _0008_charm_nail_damage_up.png
+textures/Charms/Quick Focus - _0005_charm_fast_focus.png
+textures/Charms/Quick Slash - _0003_charm_nail_slash_speed_up.png
+textures/Charms/Sharp Shadow - charm_shade_impact.png
+textures/Charms/Soul Catcher - _0001_charm_more_soul.png
+textures/Charms/Unbreakable Strength_0002_charm_glass_attack_up_full.png
+textures/Controller_Dialogue_0000_top.png
+textures/Controller_Dialogue_0001_bot.png
+textures/CrystalCrawler/Death Air.png
+textures/CrystalCrawler/Death Land.png
+textures/CrystalCrawler/Turn.png
+textures/CrystalCrawler/Walk.png
+textures/CrystalGuardian/CrystalLaser.png
+textures/CrystalGuardian/Death Land.png
+textures/CrystalGuardian/Evade.png
+textures/CrystalGuardian/Idle.png
+textures/CrystalGuardian/LaserCircle.png
+textures/CrystalGuardian/Run.png
+textures/CrystalGuardian/Shoot.png
+textures/HUD/BreakHealth.png
+textures/HUD/EmptyHealth.png
+textures/HUD/FilledHealth.png
+textures/HUD/FilledHealthShine.png
+textures/HUD/HealthBar_005.png
+textures/HUD/HealthRefill.png
+textures/HUD/SoulOrb_Empty.png
+textures/HUD/Soulorb.atlas
+textures/HUD/soulorb.png
+textures/Hidden_Dreams_Logo.png
+textures/HuskHorned/Attack Anticipate.png
+textures/HuskHorned/Attack Lunge.png
+textures/HuskHorned/Death Land.png
+textures/HuskHorned/Idle.png
+textures/HuskHorned/Walk.png
+textures/Knight/Airborne.png
+textures/Knight/Dash Effect.png
+textures/Knight/Dash.png
+textures/Knight/Double Jump.png
+textures/Knight/DownSlash.png
+textures/Knight/DownSlashEffect.png
+textures/Knight/Fall_000.png
+textures/Knight/Fall_001.png
+textures/Knight/Fall_002.png
+textures/Knight/Fall_003.png
+textures/Knight/Fall_004.png
+textures/Knight/Fall_005.png
+textures/Knight/Focus.png
+textures/Knight/Idle.png
+textures/Knight/Run.png
+textures/Knight/Shadow Dash.png
+textures/Knight/Slash.png
+textures/Knight/SlashEffect.png
+textures/Knight/UpSlash.png
+textures/Knight/UpSlashEffect.png
+textures/Knight/Wall Slide.png
+textures/Mosquito/Attack Anticipate.png
+textures/Mosquito/Attack.png
+textures/Mosquito/Death Air.png
+textures/Mosquito/Death Land.png
+textures/Mosquito/Idle.png
+textures/SoulBall.png
+textures/SoulScream.png
+textures/Voidheart_menu_BG.png
+textures/Zote/Attack.png
+textures/Zote/Idle.png
+textures/Zote/Talk.png
+textures/Zote/controller__0007_Switch_Up.png
+textures/falseknight/Attack Antic.png
+textures/falseknight/Attack Recover.png
+textures/falseknight/Attack.png
+textures/falseknight/Body.png
+textures/falseknight/DeathLand.png
+textures/falseknight/Idle.png
+textures/falseknight/Jump Antic.png
+textures/falseknight/Jump Attack.png
+textures/falseknight/Jump.png
+textures/falseknight/Run Antic.png
+textures/falseknight/Run.png
+textures/falseknight/Shockwave_000.png
+textures/falseknight/Shockwave_001.png
+textures/falseknight/Shockwave_002.png
+textures/falseknight/Shockwave_003.png
+textures/falseknight/Shockwave_004.png
+textures/falseknight/Shockwave_005.png
+textures/falseknight/Shockwave_006.png
+textures/falseknight/Shockwave_007.png
+textures/falseknight/Stun Recover.png
+textures/team_cherry_logo_main_menu.png
+textures/vheart_save_Switch.png
+textures/vheart_title_RU.png
+ui/font-list.fnt
+ui/font-subtitle.fnt
+ui/font-window.fnt
+ui/font.fnt
+ui/shade/README.md
+ui/shade/preview.png
+ui/shade/raw/README.md
+ui/shade/raw/android-horizontal-scrollbar-knob.9.png
+ui/shade/raw/android-horizontal-scrollbar.9.png
+ui/shade/raw/android-vertical-scrollbar-knob.9.png
+ui/shade/raw/android-vertical-scrollbar.9.png
+ui/shade/raw/button-down.9.png
+ui/shade/raw/button.9.png
+ui/shade/raw/check-off.png
+ui/shade/raw/check-on.png
+ui/shade/raw/cursor.9.png
+ui/shade/raw/font-button.fnt
+ui/shade/raw/font-button.png
+ui/shade/raw/font-label.fnt
+ui/shade/raw/font-label.png
+ui/shade/raw/font-title.fnt
+ui/shade/raw/font-title.png
+ui/shade/raw/horizontal-scrollbar-knob.9.png
+ui/shade/raw/horizontal-scrollbar.9.png
+ui/shade/raw/horizontal-splitplane.9.png
+ui/shade/raw/label.9.png
+ui/shade/raw/left-button-down.png
+ui/shade/raw/left-button.png
+ui/shade/raw/list-selection.9.png
+ui/shade/raw/list.9.png
+ui/shade/raw/loading-bar-fill.9.png
+ui/shade/raw/loading-bar-knob.png
+ui/shade/raw/loading-bar.9.png
+ui/shade/raw/minus.png
+ui/shade/raw/music-down.png
+ui/shade/raw/music-off.png
+ui/shade/raw/music.png
+ui/shade/raw/panel1.9.png
+ui/shade/raw/panel2.9.png
+ui/shade/raw/plus.png
+ui/shade/raw/radio-button-off.9.png
+ui/shade/raw/radio-button.9.png
+ui/shade/raw/right-button-down.png
+ui/shade/raw/right-button.png
+ui/shade/raw/round-button-down.9.png
+ui/shade/raw/round-button.9.png
+ui/shade/raw/select-box-down.9.png
+ui/shade/raw/select-box.9.png
+ui/shade/raw/slider-bar-fill.9.png
+ui/shade/raw/slider-bar-knob.png
+ui/shade/raw/slider-bar.9.png
+ui/shade/raw/sound-down.png
+ui/shade/raw/sound-off.png
+ui/shade/raw/sound.png
+ui/shade/raw/switch-off.png
+ui/shade/raw/switch.png
+ui/shade/raw/text-selection.png
+ui/shade/raw/textfield.9.png
+ui/shade/raw/toggle-button-down.9.png
+ui/shade/raw/toggle-button-off.9.png
+ui/shade/raw/toggle-button.9.png
+ui/shade/raw/touchpad-knob.png
+ui/shade/raw/touchpad.png
+ui/shade/raw/tree-minus.png
+ui/shade/raw/tree-plus.png
+ui/shade/raw/vertical-scrollbar-knob.9.png
+ui/shade/raw/vertical-scrollbar.9.png
+ui/shade/raw/vertical-splitpane.9.png
+ui/shade/raw/white.png
+ui/shade/raw/window.9.png
+ui/shade/skin/font-button.fnt
+ui/shade/skin/font-label.fnt
+ui/shade/skin/font-title.fnt
+ui/shade/skin/uiskin.atlas
+ui/shade/skin/uiskin.json
+ui/shade/skin/uiskin.png
+ui/shade/style-guide.png
+ui/uiskin.atlas
+ui/uiskin.json
+ui/uiskin.png
