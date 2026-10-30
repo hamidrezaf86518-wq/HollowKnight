@@ -1,106 +1,56 @@
 package com.hollowknight.view.screens;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.Pixmap;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
-import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.hollowknight.HollowKnight;
+import com.hollowknight.i18n.Text;
+import com.hollowknight.view.ui.Theme;
 
+import static com.hollowknight.model.Constants.WORLD_HEIGHT;
+import static com.hollowknight.model.Constants.WORLD_WIDTH;
 
 public class VictoryScreen implements Disposable {
-
-    private final Stage stage;
-    private final Skin skin;
-    private final HollowKnight game;
-
-    private boolean visible = false;
-    private float fadeAlpha = 0f;
     private static final float FADE_SPEED = 1.6f;
 
-    private Label statsLabel;
-    private Table rootTable;   
+    private final Stage stage;
+    private final HollowKnight game;
+
+    private Table rootTable;
+    private boolean visible = false;
+    private float fadeAlpha = 0f;
 
     public VictoryScreen(SpriteBatch batch, HollowKnight game) {
         this.game = game;
-        
-        stage = new Stage(new ScreenViewport());
-        skin = buildSkin();
-        buildUI();
+        this.stage = new Stage(new ExtendViewport(WORLD_WIDTH, WORLD_HEIGHT), batch);
     }
 
-    private Skin buildSkin() {
-        Skin skin = new Skin();
+    private void buildUI(float playTimeSeconds, int deathCount, int enemiesKilled) {
+        stage.getRoot().clearChildren();
 
-        BitmapFont titleFont = new BitmapFont();
-        titleFont.getData().setScale(3.2f);
-        BitmapFont normalFont = new BitmapFont();
-        normalFont.getData().setScale(1.3f);
-
-        
-        Pixmap bgPm = new Pixmap(1, 1, Pixmap.Format.RGBA8888);
-        bgPm.setColor(0, 0, 0, 0.78f);
-        bgPm.fill();
-        skin.add("black-bg", new Texture(bgPm));
-        bgPm.dispose();
-
-        
-        Pixmap btnUp = new Pixmap(260, 56, Pixmap.Format.RGBA8888);
-        btnUp.setColor(0.08f, 0.08f, 0.08f, 0.95f);
-        btnUp.fill();
-        btnUp.setColor(Color.GOLDENROD);
-        btnUp.drawRectangle(0, 0, 260, 56);
-        btnUp.drawRectangle(1, 1, 258, 54);
-        skin.add("btn-up", new Texture(btnUp));
-        btnUp.dispose();
-
-        
-        Pixmap btnDown = new Pixmap(260, 56, Pixmap.Format.RGBA8888);
-        btnDown.setColor(Color.GOLDENROD);
-        btnDown.fill();
-        skin.add("btn-down", new Texture(btnDown));
-        btnDown.dispose();
-
-        Label.LabelStyle titleStyle = new Label.LabelStyle(titleFont, Color.GOLDENROD);
-        skin.add("title", titleStyle);
-
-        Label.LabelStyle normalStyle = new Label.LabelStyle(normalFont, Color.WHITE);
-        skin.add("normal", normalStyle);
-
-        TextButton.TextButtonStyle btnStyle = new TextButton.TextButtonStyle();
-        btnStyle.up = skin.getDrawable("btn-up");
-        btnStyle.down = skin.getDrawable("btn-down");
-        btnStyle.font = normalFont;
-        btnStyle.fontColor = Color.BLACK;
-        btnStyle.overFontColor = Color.DARK_GRAY;
-        skin.add("default", btnStyle);
-
-        return skin;
-    }
-
-    private void buildUI() {
         rootTable = new Table();
         rootTable.setFillParent(true);
-        rootTable.setBackground(skin.getDrawable("black-bg"));
+        rootTable.setBackground(Theme.dim(0.82f));
 
-        Label title = new Label("FALSE KNIGHT DEFEATED", skin, "title");
+        Label title = Theme.label(Text.VICTORY_TITLE.get(), "title");
+        title.setColor(Theme.GOLD);
         title.setAlignment(Align.center);
 
-        statsLabel = new Label("", skin, "normal");
-        statsLabel.setAlignment(Align.center);
+        Table stats = new Table();
+        stats.defaults().width(240f).pad(0f, 14f, 0f, 14f);
+        stats.add(createStat(Theme.formatTime(playTimeSeconds), Text.STAT_TIME.get()));
+        stats.add(createStat(String.valueOf(deathCount), Text.STAT_DEATHS.get()));
+        stats.add(createStat(String.valueOf(enemiesKilled), Text.STAT_ENEMIES.get()));
 
-        TextButton restartBtn = new TextButton("Restart", skin);
+        TextButton restartBtn = Theme.button(Text.RESTART.get());
         restartBtn.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
@@ -108,7 +58,7 @@ public class VictoryScreen implements Disposable {
             }
         });
 
-        TextButton menuBtn = new TextButton("Return to Main Menu", skin);
+        TextButton menuBtn = Theme.button(Text.MAIN_MENU.get());
         menuBtn.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
@@ -116,39 +66,45 @@ public class VictoryScreen implements Disposable {
             }
         });
 
-        rootTable.add(title).padBottom(40).row();
-        rootTable.add(statsLabel).padBottom(50).row();
-        rootTable.add(restartBtn).width(280).height(60).padBottom(20).row();
-        rootTable.add(menuBtn).width(280).height(60);
+        rootTable.add(title).padBottom(12f).row();
+        rootTable.add(Theme.divider(520f)).width(520f).height(13f).padBottom(40f).row();
+        rootTable.add(stats).padBottom(52f).row();
 
+        Table buttons = new Table();
+        buttons.defaults().width(260f).height(50f).pad(0f, 10f, 0f, 10f);
+        buttons.add(restartBtn);
+        buttons.add(menuBtn);
+        rootTable.add(buttons);
+
+        rootTable.getColor().a = 0f;
         stage.addActor(rootTable);
-        rootTable.getColor().a = 0f; 
     }
 
-    
+    private Table createStat(String value, String caption) {
+        Table box = new Table();
+        box.setBackground(Theme.card());
+        box.pad(22f, 16f, 20f, 16f);
+        Label number = Theme.label(value, "stat");
+        number.setAlignment(Align.center);
+        Label name = Theme.label(caption, "muted");
+        name.setAlignment(Align.center);
+        box.add(number).row();
+        box.add(name).padTop(8f);
+        return box;
+    }
+
     public void show(float playTimeSeconds, int deathCount, int enemiesKilled) {
         visible = true;
         fadeAlpha = 0f;
 
         int w = Gdx.graphics.getWidth();
         int h = Gdx.graphics.getHeight();
-        if (w <= 0) w = 1280;   
+        if (w <= 0) w = 1280;
         if (h <= 0) h = 720;
 
-        
         stage.getViewport().update(w, h, true);
-
-        int minutes = (int) (playTimeSeconds / 60);
-        int seconds = (int) (playTimeSeconds % 60);
-        statsLabel.setText(String.format(
-            "Play Time: %02d:%02d   |   Deaths: %d   |   Enemies Defeated: %d",
-            minutes, seconds, deathCount, enemiesKilled));
-
-        
-        stage.getRoot().setSize(w, h);
-        rootTable.setSize(w, h);
-        rootTable.invalidateHierarchy();
-        stage.act(0);
+        buildUI(playTimeSeconds, deathCount, enemiesKilled);
+        stage.act(0f);
 
         Gdx.input.setInputProcessor(stage);
         playVictoryMusicIfAvailable();
@@ -158,7 +114,7 @@ public class VictoryScreen implements Disposable {
         try {
             game.audioSystem.playEnvironmentBGM("Victory");
         } catch (Exception e) {
-            
+            Gdx.app.error("VictoryScreen", "victory music unavailable", e);
         }
     }
 
@@ -184,7 +140,8 @@ public class VictoryScreen implements Disposable {
 
     public void render() {
         if (!visible) return;
-        stage.draw();   
+        stage.getViewport().apply();
+        stage.draw();
     }
 
     public void resize(int width, int height) {
@@ -197,7 +154,6 @@ public class VictoryScreen implements Disposable {
 
     @Override
     public void dispose() {
-        stage.dispose();  
-        skin.dispose();
+        stage.dispose();
     }
 }

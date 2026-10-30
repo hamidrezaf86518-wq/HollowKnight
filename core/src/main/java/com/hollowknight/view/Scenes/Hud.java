@@ -15,6 +15,7 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.hollowknight.HollowKnight;
 import com.hollowknight.controller.AchievementListener;
+import com.hollowknight.i18n.Text;
 import com.hollowknight.model.Achievement;
 import com.hollowknight.controller.Systems.AssetSystem;
 import com.hollowknight.view.LabelStyle;
@@ -102,7 +103,7 @@ public class Hud implements Disposable, AchievementListener {
 
     @Override
     public void onAchievementUnlocked(Achievement achievement) {
-        achievementPopupLabel.setText("Achievement Unlocked: " + achievement.getTitle());
+        achievementPopupLabel.setText(Text.ACH_POPUP.get() + ": " + achievement.getTitle());
         achievementPopupLabel.clearActions();
         achievementPopupLabel.getColor().a = 0f;
         achievementPopupLabel.addAction(Actions.sequence(

@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.physics.box2d.*;
 import com.badlogic.gdx.utils.Array;
 import com.hollowknight.HollowKnight;
+import com.hollowknight.i18n.Dialogues;
 import com.hollowknight.view.screens.GameScreen;
 
 import static com.hollowknight.model.Constants.*;
@@ -30,22 +31,6 @@ public class Zote extends Sprite {
     private State previousState;
     private int face;
     private float stateTimer;
-    private final String[][] dialogueSets = {
-        {   
-            "I am Zote the Mighty, a knight of great renown.",
-            "Tremble before my name!",
-            "You look like you could learn much from me."
-        },
-        {
-            "Precept One: Always Win Your Battles.",
-            "Losing a battle earns you nothing and teaches you nothing.",
-            "Win, and you will be stronger forever."
-        },
-        {    "Precept Two: Never Let Them Laugh At You.",
-            "Fools laugh at greatness when they fail to understand it.",
-            "Ignore them. They are beneath you."
-        }
-    };
     private TextureRegion promptIcon;
     private float promptTimer = 0;
     private int currentDialogueSet = 0; 
@@ -160,6 +145,7 @@ public class Zote extends Sprite {
         return dx < 1.5f && dy < 1.5f;
     }
     public String[] getNextDialogueSet() {
+        String[][] dialogueSets = Dialogues.zote();
         String[] set = dialogueSets[currentDialogueSet];
         currentDialogueSet = Math.min(currentDialogueSet + 1, dialogueSets.length - 1);
         return set;

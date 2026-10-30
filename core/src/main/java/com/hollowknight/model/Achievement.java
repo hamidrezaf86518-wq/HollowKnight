@@ -1,42 +1,30 @@
 package com.hollowknight.model;
 
-
+import com.hollowknight.i18n.Text;
 
 public enum Achievement {
-    COMPLETION(
-        "Completion",
-        "Finish the game by defeating the False Knight."
-    ),
-    SPEEDRUN(
-        "Speedrun",
-        "Finish the game in under " + (Constants.SPEEDRUN_TARGET_SECONDS / 60) + " minutes."
-    ),
-    TRUE_HUNTER(
-        "True Hunter",
-        "Kill at least one of every enemy type in the game."
-    ),
-    DEFEAT_FALSE_KNIGHT(
-        "Defeat False Knight",
-        "Defeat the False Knight boss."
-    ),
-    FLAWLESS_VICTORY(
-        "Flawless Victory",
-        "Defeat the False Knight without dying once."
-    );
+    COMPLETION(Text.ACH_COMPLETION, Text.ACH_COMPLETION_DESC),
+    SPEEDRUN(Text.ACH_SPEEDRUN, Text.ACH_SPEEDRUN_DESC),
+    TRUE_HUNTER(Text.ACH_TRUE_HUNTER, Text.ACH_TRUE_HUNTER_DESC),
+    DEFEAT_FALSE_KNIGHT(Text.ACH_DEFEAT_FALSE_KNIGHT, Text.ACH_DEFEAT_FALSE_KNIGHT_DESC),
+    FLAWLESS_VICTORY(Text.ACH_FLAWLESS, Text.ACH_FLAWLESS_DESC);
 
-    private final String title;
-    private final String description;
+    private final Text title;
+    private final Text description;
 
-    Achievement(String title, String description) {
+    Achievement(Text title, Text description) {
         this.title = title;
         this.description = description;
     }
 
     public String getTitle() {
-        return title;
+        return title.get();
     }
 
     public String getDescription() {
-        return description;
+        if (this == SPEEDRUN) {
+            return description.fmt(Constants.SPEEDRUN_TARGET_SECONDS / 60);
+        }
+        return description.get();
     }
 }

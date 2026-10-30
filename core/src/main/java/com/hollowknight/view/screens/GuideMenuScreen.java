@@ -1,255 +1,162 @@
 package com.hollowknight.view.screens;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
-import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.*;
-import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import com.badlogic.gdx.utils.viewport.StretchViewport;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
+import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.utils.Align;
 import com.hollowknight.HollowKnight;
-import com.hollowknight.view.LabelStyle;
+import com.hollowknight.i18n.Text;
+import com.hollowknight.view.ui.Theme;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import static com.hollowknight.model.Constants.WORLD_HEIGHT;
-import static com.hollowknight.model.Constants.WORLD_WIDTH;
 import static com.hollowknight.model.KeyBinding.*;
 
-public class GuideMenuScreen implements Screen {
-    private final HollowKnight game;
-    private Stage stage;
-    private Skin skin;
-    private StretchViewport viewport;
-    private OrthographicCamera camera;
-    private Texture background;
+public class GuideMenuScreen extends MenuScreen {
+    private static final float CONTENT_WIDTH = 820f;
 
-
-    private final Map<Integer, TextButton> keyToButtonMap = new HashMap<>();
-
-    private final Map<TextButton, TextButton.TextButtonStyle> originalStyles = new HashMap<>();
+    private final Map<Integer, KeyChip> chips = new HashMap<>();
 
     public GuideMenuScreen(HollowKnight game) {
-        this.game = game;
-        camera = new OrthographicCamera();
-        viewport = new StretchViewport(WORLD_WIDTH, WORLD_HEIGHT, camera);
-        stage = new Stage(viewport);
-        skin = new Skin(Gdx.files.internal("ui/shade/skin/uiskin.json"));
-        background = game.assetSystem.get("textures/Voidheart_menu_BG.png", Texture.class);
-        Gdx.input.setInputProcessor(stage);
-    }
-
-    @Override
-    public void show() {
-        game.audioSystem.playEnvironmentBGM("MainMenu");
-        Label.LabelStyle style = LabelStyle.getStyle(30);
-        Table backBtnWrapper = new Table(skin);
-        backBtnWrapper.top().left();
-        Table root = new Table(skin);
-        root.top().center();
-
-        Table table = new Table(skin);
-        table.top().left();
-        table.defaults().pad(10);
-
-        TextButton backBtn = new TextButton("BACK", skin);
-
-        Label title = new Label("GUIDE MENU", style);
-        style = LabelStyle.getStyle(20);
-        Label title1 = new Label("BUTTONS EXPLANATIONS", style);
-        Label title2 = new Label("ABILITIES EXPLANATIONS", style);
-        Label title3 = new Label("HEALTH & SOUL", style);
-        Label title4 = new Label("CHEAT CODES", style);
-        style = LabelStyle.getStyle(15);
-        Label attackExp = new Label("ATTACK : " + Input.Keys.toString(ATTACK), style);
-        Label jumpExp = new Label("JUMP : " + Input.Keys.toString(JUMP), style);
-        Label dashExp = new Label("DASH : " + Input.Keys.toString(DASH), style);
-        Label moveRightExp = new Label("MOVE RIGHT : " + Input.Keys.toString(MOVE_RIGHT), style);
-        Label moveLeftExp = new Label("MOVE LEFT : " + Input.Keys.toString(MOVE_LEFT), style);
-        Label pauseExp = new Label("PAUSE : " + Input.Keys.toString(PAUSE), style);
-        Label focusExp = new Label("FOCUS : " + Input.Keys.toString(FOCUS), style);
-
-        Label AbilitiesExp = new Label("NAIL\n" +
-            "Your primary weapon. Strike enemies to deal\n" +
-            "damage and gather SOUL.\n\n" +
-            "JUMP\n" +
-            "Leap into the air to avoid attacks and reach\n" +
-            "higher platforms.\n\n" +
-            "SHADOW DASH\n" +
-            "Dash quickly forward. While dashing, you can\n" +
-            "pass through enemies and some obstacles\n" +
-            "without taking damage.\n\n" +
-            "FOCUS\n" +
-            "Hold to channel SOUL and restore lost Masks.\n" +
-            "You cannot move while focusing.\n\n" +
-            "VENGEFUL SPIRIT\n" +
-            "Release gathered SOUL to fire a spell that\n" +
-            "damages enemies from a distance.", style);
-
-        Label healthAndSoulExp = new Label("MASKS (Health)\n" +
-            "Your health is shown as Masks at the top.\n" +
-            "Each hit breaks one Mask.\n" +
-            "If all Masks break, you die.\n\n" +
-            "SOUL\n" +
-            "The SOUL meter fills as you strike enemies.\n" +
-            "Gather SOUL to heal or cast spells.\n\n" +
-            "HEALING\n" +
-            "Hold FOCUS to spend SOUL and restore a Mask.\n" +
-            "You cannot move while healing.", style);
-
-        Label cheatCodes = new Label("LEFT CTRL + B  --------------->   Teleport to Boss Arena\n" +
-            "LEFT CTRL + N  --------------->   Noclip / Spectator Mode\n" +
-            "LEFT CTRL + H  --------------->   Emergency Heal\n" +
-            "LEFT CTRL + S  --------------->   Refill Soul Vessel\n" +
-            "LEFT CTRL + G  --------------->   Toggle God Mode\n", style);
-
-        TextButton attackBtn = new TextButton("ATTACK", skin);
-        TextButton jumpBtn = new TextButton("JUMP", skin);
-        TextButton dashBtn = new TextButton("DASH", skin);
-        TextButton moveRightBtn = new TextButton("MOVE RIGHT", skin);
-        TextButton moveLeftBtn = new TextButton("MOVE LEFT", skin);
-        TextButton focusBtn = new TextButton("FOCUS", skin);
-        TextButton pauseBtn = new TextButton("PAUSE", skin);
-
-
-        registerKeyButton(ATTACK, attackBtn);
-        registerKeyButton(JUMP, jumpBtn);
-        registerKeyButton(DASH, dashBtn);
-        registerKeyButton(MOVE_RIGHT, moveRightBtn);
-        registerKeyButton(MOVE_LEFT, moveLeftBtn);
-        registerKeyButton(FOCUS, focusBtn);
-        registerKeyButton(PAUSE,pauseBtn);
-
-
-        backBtnWrapper.add(backBtn).size(100, 50).padLeft(50).padTop(20);
-        root.add(title).padBottom(20).row();
-        table.add(title1).colspan(2).row();
-        table.add(attackExp).growX().left();
-        table.add(attackBtn).width(200).row();
-        table.add(jumpExp).growX().left();
-        table.add(jumpBtn).width(200).row();
-        table.add(dashExp).growX().left();
-        table.add(dashBtn).width(200).row();
-        table.add(moveRightExp).growX().left();
-        table.add(moveRightBtn).width(200).row();
-        table.add(moveLeftExp).growX().left();
-        table.add(moveLeftBtn).width(200).row();
-        table.add(focusExp).growX().left();
-        table.add(focusBtn).width(200).row();
-        table.add(pauseExp).growX().left();
-        table.add(pauseBtn).width(200).row();
-        table.add(title2).colspan(2).row();
-        table.add(AbilitiesExp).colspan(2).growX().left().row();
-        table.add(title3).colspan(2).row();
-        table.add(healthAndSoulExp).colspan(2).growX().left().row();
-        table.add(title4).colspan(2).row();
-        table.add(cheatCodes).colspan(2).growX().left().row();
-
-        ScrollPane scrollPane = new ScrollPane(table, skin);
-        scrollPane.setScrollingDisabled(true, false);
-        scrollPane.setOverscroll(false, false);
-        scrollPane.setFadeScrollBars(true);
-        scrollPane.setScrollBarPositions(false, true);
-
-        root.add(scrollPane)
-            .width(800)
-            .height(600)
-            .center().row();
-
-        Stack stack = new Stack();
-        stack.setFillParent(true);
-        stack.add(backBtnWrapper);
-        stack.add(root);
-        stage.addActor(stack);
-
-        backBtn.addListener(new ClickListener() {
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(new MainMenuScreen(game));
-            }
-        });
-
-
+        super(game);
         stage.addListener(new InputListener() {
             @Override
             public boolean keyDown(InputEvent event, int keycode) {
-                TextButton btn = keyToButtonMap.get(keycode);
-                if (btn != null) {
-                    pressButtonVisually(btn);
+                KeyChip chip = chips.get(keycode);
+                if (chip != null) {
+                    chip.setPressed(true);
                 }
                 return false;
             }
 
             @Override
             public boolean keyUp(InputEvent event, int keycode) {
-                TextButton btn = keyToButtonMap.get(keycode);
-                if (btn != null) {
-                    releaseButtonVisually(btn);
+                KeyChip chip = chips.get(keycode);
+                if (chip != null) {
+                    chip.setPressed(false);
                 }
                 return false;
             }
         });
-
-        stage.setKeyboardFocus(stage.getRoot());
     }
 
+    @Override
+    protected void build() {
+        chips.clear();
 
-    private void registerKeyButton(int keycode, TextButton button) {
-        keyToButtonMap.put(keycode, button);
-        originalStyles.put(button, button.getStyle());
+        Table root = new Table();
+        root.setFillParent(true);
+        root.top().padTop(30f);
+        root.add(Theme.label(Text.GUIDE_TITLE.get(), "title")).padBottom(10f).row();
+        root.add(Theme.divider(460f)).width(460f).height(13f).padBottom(18f).row();
+
+        Table content = new Table();
+        content.top().left();
+        content.defaults().left();
+
+        addSection(content, Text.GUIDE_CONTROLS.get(), true);
+        content.add(Theme.label(Text.GUIDE_CONTROLS_HINT.get(), "muted")).left().padBottom(10f).row();
+        addKeyRow(content, Text.ACTION_ATTACK.get(), ATTACK);
+        addKeyRow(content, Text.ACTION_JUMP.get(), JUMP);
+        addKeyRow(content, Text.ACTION_DASH.get(), DASH);
+        addKeyRow(content, Text.ACTION_MOVE_RIGHT.get(), MOVE_RIGHT);
+        addKeyRow(content, Text.ACTION_MOVE_LEFT.get(), MOVE_LEFT);
+        addKeyRow(content, Text.ACTION_FOCUS.get(), FOCUS);
+        addKeyRow(content, Text.ACTION_PAUSE.get(), PAUSE);
+
+        addSection(content, Text.GUIDE_ABILITIES.get(), false);
+        addEntry(content, Text.ABILITY_NAIL.get(), Text.ABILITY_NAIL_DESC.get());
+        addEntry(content, Text.ABILITY_JUMP.get(), Text.ABILITY_JUMP_DESC.get());
+        addEntry(content, Text.ABILITY_DASH.get(), Text.ABILITY_DASH_DESC.get());
+        addEntry(content, Text.ABILITY_FOCUS.get(), Text.ABILITY_FOCUS_DESC.get());
+        addEntry(content, Text.ABILITY_SPIRIT.get(), Text.ABILITY_SPIRIT_DESC.get());
+
+        addSection(content, Text.GUIDE_HEALTH.get(), false);
+        addEntry(content, Text.HEALTH_MASKS.get(), Text.HEALTH_MASKS_DESC.get());
+        addEntry(content, Text.HEALTH_SOUL.get(), Text.HEALTH_SOUL_DESC.get());
+        addEntry(content, Text.HEALTH_HEALING.get(), Text.HEALTH_HEALING_DESC.get());
+
+        addSection(content, Text.CHEAT_CODES.get(), false);
+        addCheatRow(content, "LEFT CTRL + B", Text.CHEAT_BOSS.get());
+        addCheatRow(content, "LEFT CTRL + N", Text.CHEAT_NOCLIP.get());
+        addCheatRow(content, "LEFT CTRL + H", Text.CHEAT_HEAL.get());
+        addCheatRow(content, "LEFT CTRL + S", Text.CHEAT_SOUL.get());
+        addCheatRow(content, "LEFT CTRL + G", Text.CHEAT_GOD.get());
+
+        ScrollPane scrollPane = new ScrollPane(content, Theme.skin());
+        scrollPane.setScrollingDisabled(true, false);
+        scrollPane.setOverscroll(false, false);
+        scrollPane.setFadeScrollBars(false);
+
+        Table frame = new Table();
+        frame.setBackground(Theme.panel());
+        frame.pad(24f, 30f, 24f, 24f);
+        frame.add(scrollPane).grow();
+
+        root.add(frame).width(CONTENT_WIDTH + 90f).height(WORLD_HEIGHT - 170f);
+
+        stage.addActor(root);
+        addBackButton();
+        stage.setScrollFocus(scrollPane);
     }
 
-
-    private void pressButtonVisually(TextButton button) {
-        TextButton.TextButtonStyle original = originalStyles.get(button);
-        if (original == null) return;
-
-        TextButton.TextButtonStyle pressedStyle = new TextButton.TextButtonStyle(original);
-        pressedStyle.up = original.down != null ? original.down : original.up;
-        button.setStyle(pressedStyle);
+    private void addSection(Table content, String title, boolean first) {
+        content.add(Theme.label(title, "gold")).left().padTop(first ? 0f : 28f).padBottom(6f).row();
+        content.add(Theme.divider(CONTENT_WIDTH)).width(CONTENT_WIDTH).height(13f).padBottom(12f).row();
     }
 
+    private void addKeyRow(Table content, String action, int keycode) {
+        KeyChip chip = new KeyChip(Theme.keyName(keycode));
+        chips.put(keycode, chip);
 
-    private void releaseButtonVisually(TextButton button) {
-        TextButton.TextButtonStyle original = originalStyles.get(button);
-        if (original != null) {
-            button.setStyle(original);
+        Table row = new Table();
+        row.add(Theme.label(action, "default")).left().expandX();
+        row.add(chip).width(200f).height(36f);
+        content.add(row).width(CONTENT_WIDTH).padBottom(8f).row();
+    }
+
+    private void addCheatRow(Table content, String keys, String description) {
+        Table row = new Table();
+        row.add(new KeyChip(keys)).width(220f).height(34f).padRight(24f);
+        row.add(Theme.label(description, "small")).left().expandX();
+        content.add(row).width(CONTENT_WIDTH).padBottom(8f).row();
+    }
+
+    private void addEntry(Table content, String name, String description) {
+        content.add(Theme.label(name, "default")).left().padTop(6f).row();
+        Label text = Theme.label(description, "muted");
+        text.setWrap(true);
+        text.setAlignment(Align.left);
+        content.add(text).width(CONTENT_WIDTH).padBottom(8f).row();
+    }
+
+    @Override
+    protected boolean handlesBack() {
+        return false;
+    }
+
+    @Override
+    protected void onBack() {
+        game.setScreen(new MainMenuScreen(game));
+    }
+
+    private static class KeyChip extends Table {
+        private final Label label;
+
+        KeyChip(String text) {
+            label = Theme.label(text, "small");
+            label.setAlignment(Align.center);
+            setBackground(Theme.chip());
+            add(label).expand().center();
+        }
+
+        void setPressed(boolean pressed) {
+            setBackground(pressed ? Theme.chipOn() : Theme.chip());
+            label.setColor(pressed ? Theme.DARK : Theme.TEXT);
         }
     }
-
-    @Override
-    public void render(float delta) {
-        Gdx.gl.glClearColor(0, 0, 0, 1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        game.audioSystem.update(delta);
-
-        camera.update();
-        viewport.apply();
-
-        game.batch.setProjectionMatrix(camera.combined);
-
-        game.batch.begin();
-        game.batch.draw(background, 0, 0, WORLD_WIDTH, WORLD_HEIGHT);
-        game.batch.end();
-
-        stage.act(delta);
-        stage.draw();
-    }
-
-    @Override
-    public void resize(int width, int height) {
-        viewport.update(width, height, true);
-        stage.getViewport().update(width, height, true);
-    }
-
-    @Override public void pause() {}
-    @Override public void resume() {}
-    @Override public void hide() {}
-    @Override public void dispose() {}
 }

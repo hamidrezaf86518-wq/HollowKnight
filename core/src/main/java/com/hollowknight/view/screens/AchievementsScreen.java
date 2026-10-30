@@ -1,150 +1,98 @@
 package com.hollowknight.view.screens;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
-import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
-import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
-import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.hollowknight.HollowKnight;
+import com.hollowknight.i18n.Text;
 import com.hollowknight.model.Achievement;
-import com.hollowknight.view.LabelStyle;
+import com.hollowknight.view.ui.Theme;
 
 import static com.hollowknight.model.Constants.WORLD_HEIGHT;
-import static com.hollowknight.model.Constants.WORLD_WIDTH;
 
-
-public class AchievementsScreen implements Screen {
-
-    private final HollowKnight game;
-    private Stage stage;
-    private Skin skin;
-    private StretchViewport viewport;
-    private OrthographicCamera camera;
-    private Texture background;
-
-    private static final Color LOCKED_COLOR = new Color(0.35f, 0.35f, 0.35f, 0.6f);
-    private static final Color UNLOCKED_COLOR = Color.WHITE;
+public class AchievementsScreen extends MenuScreen {
 
     public AchievementsScreen(HollowKnight game) {
-        this.game = game;
-        camera = new OrthographicCamera();
-        viewport = new StretchViewport(WORLD_WIDTH, WORLD_HEIGHT, camera);
-        stage = new Stage(viewport);
-        skin = new Skin(Gdx.files.internal("ui/shade/skin/uiskin.json"));
-        background = game.assetSystem.get("textures/Voidheart_menu_BG.png", Texture.class);
-        Gdx.input.setInputProcessor(stage);
+        super(game);
     }
 
     @Override
-    public void show() {
-        game.audioSystem.playEnvironmentBGM("MainMenu");
-        Label.LabelStyle titleStyle = LabelStyle.getStyle(30);
-        Label.LabelStyle achievementTitleStyle = LabelStyle.getStyle(20);
-        Label.LabelStyle achievementDescStyle = LabelStyle.getStyle(14);
-        Label.LabelStyle statusStyle = LabelStyle.getStyle(14);
-
-        Table root = new Table(skin);
-        root.top().center();
+    protected void build() {
+        Table root = new Table();
         root.setFillParent(true);
+        root.top().padTop(36f);
 
-        Label title = new Label("ACHIEVEMENTS", titleStyle);
-
-        Table list = new Table(skin);
-        list.top();
-        list.defaults().pad(12).left();
-
+        int unlockedCount = 0;
         for (Achievement achievement : Achievement.values()) {
-            boolean unlocked = game.achievementManager.isUnlocked(achievement);
-            Color color = unlocked ? UNLOCKED_COLOR : LOCKED_COLOR;
-
-            Table row = new Table(skin);
-            row.defaults().left().pad(4);
-
-            Label statusBadge = new Label(unlocked ? "[ UNLOCKED ]" : "[ LOCKED ]", statusStyle);
-            statusBadge.setColor(unlocked ? new Color(0.4f, 1f, 0.4f, 1f) : new Color(0.6f, 0.6f, 0.6f, 0.8f));
-
-            Label nameLabel = new Label(achievement.getTitle(), achievementTitleStyle);
-            nameLabel.setColor(color);
-
-            
-            
-            
-            
-            String descriptionText = unlocked ? achievement.getDescription() : "???";
-            Label descLabel = new Label(descriptionText, achievementDescStyle);
-            descLabel.setColor(color);
-
-            Table textColumn = new Table(skin);
-            textColumn.add(nameLabel).left().row();
-            textColumn.add(descLabel).left().row();
-
-            row.add(statusBadge).width(140);
-            row.add(textColumn).left().padLeft(20);
-
-            list.add(row).growX().row();
+            if (game.achievementManager.isUnlocked(achievement)) {
+                unlockedCount++;
+            }
         }
 
-        ScrollPane scrollPane = new ScrollPane(list, skin);
+        root.add(Theme.label(Text.ACH_TITLE.get(), "title")).padBottom(4f).row();
+        root.add(Theme.label(Text.ACH_PROGRESS.fmt(unlockedCount, Achievement.values().length), "muted")).padBottom(10f).row();
+        root.add(Theme.divider(460f)).width(460f).height(13f).padBottom(22f).row();
+
+        Table list = new Table();
+        list.top();
+        list.defaults().growX().padBottom(12f);
+
+        for (Achievement achievement : Achievement.values()) {
+            list.add(createCard(achievement)).row();
+        }
+
+        ScrollPane scrollPane = new ScrollPane(list, Theme.skin());
         scrollPane.setFadeScrollBars(false);
         scrollPane.setScrollingDisabled(true, false);
+        scrollPane.setOverscroll(false, false);
 
-        TextButton backBtn = new TextButton("BACK", skin);
-        backBtn.addListener(new ClickListener() {
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(new MainMenuScreen(game));
-            }
-        });
+        Table frame = new Table();
+        frame.setBackground(Theme.panel());
+        frame.pad(22f);
+        frame.add(scrollPane).grow();
 
-        root.add(title).padTop(30).padBottom(20).row();
-        root.add(scrollPane).width(WORLD_WIDTH * 0.7f).height(WORLD_HEIGHT * 0.55f).padBottom(20).row();
-        root.add(backBtn).width(200).height(50);
+        root.add(frame).width(900f).height(WORLD_HEIGHT - 230f);
 
         stage.addActor(root);
-        stage.setKeyboardFocus(stage.getRoot());
+        addBackButton();
+    }
+
+    private Table createCard(Achievement achievement) {
+        boolean unlocked = game.achievementManager.isUnlocked(achievement);
+
+        Table card = new Table();
+        card.setBackground(Theme.card());
+        card.pad(16f, 20f, 16f, 20f);
+
+        Label badge = Theme.label(unlocked ? Text.ACH_UNLOCKED.get() : Text.ACH_LOCKED.get(), "small");
+        badge.setColor(unlocked ? Theme.GOOD : Theme.MUTED);
+        Table badgeBox = new Table();
+        badgeBox.setBackground(Theme.chip());
+        badgeBox.pad(6f, 10f, 6f, 10f);
+        badgeBox.add(badge);
+
+        Label name = Theme.label(achievement.getTitle(), "gold");
+        name.setColor(unlocked ? Theme.GOLD : Theme.MUTED);
+        Label description = Theme.label(unlocked ? achievement.getDescription() : "???", "small");
+        description.setWrap(true);
+        description.setColor(unlocked ? Theme.TEXT : Theme.MUTED);
+
+        Table text = new Table();
+        text.left();
+        text.add(name).left().row();
+        text.add(description).left().growX().padTop(4f).row();
+
+        card.add(badgeBox).width(150f).left().top();
+        card.add(text).growX().padLeft(22f).left();
+
+        if (!unlocked) {
+            card.setColor(1f, 1f, 1f, 0.7f);
+        }
+        return card;
     }
 
     @Override
-    public void render(float delta) {
-        Gdx.gl.glClearColor(0, 0, 0, 1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        game.audioSystem.update(delta);
-
-        camera.update();
-        viewport.apply();
-
-        game.batch.setProjectionMatrix(camera.combined);
-        game.batch.begin();
-        game.batch.draw(background, 0, 0, WORLD_WIDTH, WORLD_HEIGHT);
-        game.batch.end();
-
-        stage.act(delta);
-        stage.draw();
-    }
-
-    @Override
-    public void resize(int width, int height) {
-        viewport.update(width, height, true);
-        stage.getViewport().update(width, height, true);
-    }
-
-    @Override public void pause() {}
-    @Override public void resume() {}
-    @Override public void hide() {}
-
-    @Override
-    public void dispose() {
-        stage.dispose();
-        skin.dispose();
+    protected void onBack() {
+        game.setScreen(new MainMenuScreen(game));
     }
 }

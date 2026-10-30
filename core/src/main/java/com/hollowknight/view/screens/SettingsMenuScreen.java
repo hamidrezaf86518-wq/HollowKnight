@@ -1,230 +1,197 @@
 package com.hollowknight.view.screens;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.*;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.ui.Slider;
+import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import com.badlogic.gdx.utils.viewport.StretchViewport;
+import com.badlogic.gdx.utils.Align;
 import com.hollowknight.HollowKnight;
+import com.hollowknight.i18n.I18n;
+import com.hollowknight.i18n.Language;
+import com.hollowknight.i18n.Text;
+import com.hollowknight.view.ui.Theme;
 
-import static com.hollowknight.model.Constants.WORLD_HEIGHT;
-import static com.hollowknight.model.Constants.WORLD_WIDTH;
-
-public class SettingsMenuScreen implements Screen {
-    private final HollowKnight game;
-    private final Screen returnScreen;
-    private Stage stage;
-    private StretchViewport viewport;
-    private OrthographicCamera camera;
-    private Texture background;
-    private Skin skin;
-
+public class SettingsMenuScreen extends MenuScreen {
     private static final float DEFAULT_MUSIC_VOLUME = 0.7f;
     private static final float DEFAULT_SFX_VOLUME = 1f;
-    private static final float MUTE_MID_VOLUME = 0.5f;
+    private static final float UNMUTE_VOLUME = 0.5f;
 
-    private boolean suppressMusicSliderEvent = false;
-    private boolean suppressSfxSliderEvent = false;
+    private final Screen returnScreen;
 
     public SettingsMenuScreen(HollowKnight game, Screen returnScreen) {
-        this.game = game;
+        super(game);
         this.returnScreen = returnScreen;
-        camera = new OrthographicCamera();
-        viewport = new StretchViewport(WORLD_WIDTH, WORLD_HEIGHT, camera);
-        stage = new Stage(viewport);
-        skin = new Skin(Gdx.files.internal("ui/shade/skin/uiskin.json"));
-        background = game.assetSystem.get("textures/Voidheart_menu_BG.png", Texture.class);
-        Gdx.input.setInputProcessor(stage);
     }
 
     @Override
-    public void show() {
-        game.audioSystem.playEnvironmentBGM("MainMenu");
-
+    protected void build() {
         Table root = new Table();
         root.setFillParent(true);
-        root.top();
+        root.center();
 
-        Label title = new Label("SETTINGS", skin);
-        title.setFontScale(3f);
-        root.add(title).padTop(40).row();
+        root.add(Theme.label(Text.SETTINGS.get(), "title")).padBottom(10f).row();
+        root.add(Theme.divider(460f)).width(460f).height(13f).padBottom(22f).row();
 
-        Table content = new Table();
-        content.defaults().pad(15).height(50);
+        Table panel = new Table();
+        panel.setBackground(Theme.panel());
+        panel.pad(30f, 40f, 34f, 40f);
 
-        Label musicVolumeLabel = new Label("MUSIC VOLUME", skin);
-        musicVolumeLabel.setFontScale(1.5f);
-        Slider musicVolumeSlider = new Slider(0f, 1f, 0.05f, false, skin);
+        panel.add(Theme.label(Text.AUDIO.get(), "gold")).left().padBottom(12f).row();
 
+        final Slider musicSlider = new Slider(0f, 1f, 0.05f, false, Theme.skin());
+        final Label musicPercent = Theme.label("", "small");
+        final TextButton musicToggle = Theme.button("", "small");
+        final Slider sfxSlider = new Slider(0f, 1f, 0.05f, false, Theme.skin());
+        final Label sfxPercent = Theme.label("", "small");
+        final TextButton sfxToggle = Theme.button("", "small");
 
-        if (game.audioSystem.isMusicMuted()) {
-            musicVolumeSlider.setValue(0f);
-        } else {
-            musicVolumeSlider.setValue(game.audioSystem.getMusicVolume());
-        }
+        final boolean[] silent = {false};
 
-        content.add(musicVolumeLabel).left();
-        content.add(musicVolumeSlider).width(300).row();
+        silent[0] = true;
+        musicSlider.setValue(game.audioSystem.isMusicMuted() ? 0f : game.audioSystem.getMusicVolume());
+        sfxSlider.setValue(game.audioSystem.isSfxMuted() ? 0f : game.audioSystem.getSfxVolume());
+        silent[0] = false;
 
-        TextButton musicToggleBtn = new TextButton(
-            game.audioSystem.isMusicMuted() ? "UNMUTE MUSIC" : "MUTE MUSIC", skin);
-        content.add(musicToggleBtn).colspan(2).width(300).row();
+        updateAudioRow(musicPercent, musicToggle, musicSlider.getValue(), game.audioSystem.isMusicMuted());
+        updateAudioRow(sfxPercent, sfxToggle, sfxSlider.getValue(), game.audioSystem.isSfxMuted());
 
-        Label sfxVolumeLabel = new Label("SFX VOLUME", skin);
-        sfxVolumeLabel.setFontScale(1.5f);
-        Slider sfxVolumeSlider = new Slider(0f, 1f, 0.05f, false, skin);
+        addAudioRow(panel, Text.MUSIC_VOLUME.get(), musicSlider, musicPercent, musicToggle);
+        addAudioRow(panel, Text.SFX_VOLUME.get(), sfxSlider, sfxPercent, sfxToggle);
 
-
-        if (game.audioSystem.isSfxMuted()) {
-            sfxVolumeSlider.setValue(0f);
-        } else {
-            sfxVolumeSlider.setValue(game.audioSystem.getSfxVolume());
-        }
-
-        content.add(sfxVolumeLabel).left();
-        content.add(sfxVolumeSlider).width(300).row();
-        TextButton sfxToggleBtn = new TextButton(
-            game.audioSystem.isSfxMuted() ? "UNMUTE SFX" : "MUTE SFX", skin);
-        content.add(sfxToggleBtn).colspan(2).width(300).row();
-
-        TextButton resetBtn = new TextButton("RESET", skin);
-        content.add(resetBtn).colspan(2).width(300).padTop(30).row();
-
-        TextButton backBtn = new TextButton("BACK", skin);
-
-        root.add(content).row();
-        root.add(backBtn).width(150).height(50).padTop(30);
-
-        stage.addActor(root);
-
-        musicVolumeSlider.addListener(new ChangeListener() {
+        musicSlider.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                if (suppressMusicSliderEvent) return;
-                game.audioSystem.setMusicVolume(musicVolumeSlider.getValue());
+                if (silent[0]) return;
+                game.audioSystem.setMusicVolume(musicSlider.getValue());
+                updateAudioRow(musicPercent, musicToggle, musicSlider.getValue(), game.audioSystem.isMusicMuted());
             }
         });
 
-        sfxVolumeSlider.addListener(new ChangeListener() {
+        sfxSlider.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                if (suppressSfxSliderEvent) return;
-                game.audioSystem.setSfxVolume(sfxVolumeSlider.getValue());
+                if (silent[0]) return;
+                game.audioSystem.setSfxVolume(sfxSlider.getValue());
+                updateAudioRow(sfxPercent, sfxToggle, sfxSlider.getValue(), game.audioSystem.isSfxMuted());
             }
         });
 
-        musicToggleBtn.addListener(new ClickListener() {
+        musicToggle.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 game.audioSystem.toggleMusic();
-                boolean nowMuted = game.audioSystem.isMusicMuted();
-                musicToggleBtn.setText(nowMuted ? "UNMUTE MUSIC" : "MUTE MUSIC");
-
-                suppressMusicSliderEvent = true;
-                if (nowMuted) {
-                    musicVolumeSlider.setValue(0f);
+                boolean muted = game.audioSystem.isMusicMuted();
+                silent[0] = true;
+                if (muted) {
+                    musicSlider.setValue(0f);
                 } else {
-                    musicVolumeSlider.setValue(MUTE_MID_VOLUME);
-                    game.audioSystem.setMusicVolume(MUTE_MID_VOLUME);
+                    musicSlider.setValue(UNMUTE_VOLUME);
+                    game.audioSystem.setMusicVolume(UNMUTE_VOLUME);
                 }
-                suppressMusicSliderEvent = false;
+                silent[0] = false;
+                updateAudioRow(musicPercent, musicToggle, musicSlider.getValue(), muted);
             }
         });
 
-        sfxToggleBtn.addListener(new ClickListener() {
+        sfxToggle.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 game.audioSystem.toggleSFX();
-                boolean nowMuted = game.audioSystem.isSfxMuted();
-                sfxToggleBtn.setText(nowMuted ? "UNMUTE SFX" : "MUTE SFX");
-
-                suppressSfxSliderEvent = true;
-                if (nowMuted) {
-                    sfxVolumeSlider.setValue(0f);
+                boolean muted = game.audioSystem.isSfxMuted();
+                silent[0] = true;
+                if (muted) {
+                    sfxSlider.setValue(0f);
                 } else {
-                    sfxVolumeSlider.setValue(MUTE_MID_VOLUME);
-                    game.audioSystem.setSfxVolume(MUTE_MID_VOLUME);
+                    sfxSlider.setValue(UNMUTE_VOLUME);
+                    game.audioSystem.setSfxVolume(UNMUTE_VOLUME);
                 }
-                suppressSfxSliderEvent = false;
+                silent[0] = false;
+                updateAudioRow(sfxPercent, sfxToggle, sfxSlider.getValue(), muted);
             }
         });
 
+        panel.add(Theme.label(Text.LANGUAGE.get(), "gold")).left().padTop(26f).padBottom(12f).row();
+
+        Table languages = new Table();
+        languages.defaults().width(220f).height(44f).pad(0f, 8f, 0f, 8f);
+        for (Language language : Language.values()) {
+            languages.add(createLanguageButton(language));
+        }
+        panel.add(languages).center().row();
+
+        root.add(panel).padBottom(22f).row();
+
+        TextButton resetBtn = Theme.button(Text.RESET.get());
         resetBtn.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                suppressMusicSliderEvent = true;
-                musicVolumeSlider.setValue(DEFAULT_MUSIC_VOLUME);
-                suppressMusicSliderEvent = false;
                 game.audioSystem.setMusicVolume(DEFAULT_MUSIC_VOLUME);
-
-                suppressSfxSliderEvent = true;
-                sfxVolumeSlider.setValue(DEFAULT_SFX_VOLUME);
-                suppressSfxSliderEvent = false;
                 game.audioSystem.setSfxVolume(DEFAULT_SFX_VOLUME);
-
                 if (game.audioSystem.isMusicMuted()) {
                     game.audioSystem.toggleMusic();
                 }
-                musicToggleBtn.setText("MUTE MUSIC");
-
                 if (game.audioSystem.isSfxMuted()) {
                     game.audioSystem.toggleSFX();
                 }
-                sfxToggleBtn.setText("MUTE SFX");
+                refresh();
             }
         });
 
+        TextButton backBtn = Theme.button(Text.BACK.get());
         backBtn.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(returnScreen);
+                onBack();
             }
         });
+
+        Table buttons = new Table();
+        buttons.defaults().width(220f).height(44f).pad(0f, 8f, 0f, 8f);
+        buttons.add(resetBtn);
+        buttons.add(backBtn);
+        root.add(buttons);
+
+        stage.addActor(root);
+    }
+
+    private void addAudioRow(Table panel, String title, Slider slider, Label percent, TextButton toggle) {
+        Table row = new Table();
+        Label name = Theme.label(title, "default");
+        row.add(name).width(250f).left();
+        row.add(slider).width(260f).padLeft(12f);
+        row.add(percent).width(64f).padLeft(12f).right();
+        row.add(toggle).width(120f).height(36f).padLeft(12f);
+        panel.add(row).padBottom(14f).row();
+    }
+
+    private void updateAudioRow(Label percent, TextButton toggle, float value, boolean muted) {
+        percent.setText(Math.round(value * 100f) + "%");
+        percent.setAlignment(Align.right);
+        toggle.setText(muted ? Text.UNMUTE.get() : Text.MUTE.get());
+    }
+
+    private TextButton createLanguageButton(Language language) {
+        boolean active = I18n.getLanguage() == language;
+        TextButton button = Theme.button(language.getNativeName(), active ? "selected" : "default");
+        button.addListener(new ClickListener() {
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+                if (I18n.getLanguage() != language) {
+                    I18n.setLanguage(language);
+                    refresh();
+                }
+            }
+        });
+        return button;
     }
 
     @Override
-    public void render(float delta) {
-        Gdx.gl.glClearColor(0, 0, 0, 1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        game.audioSystem.update(delta);
-        camera.update();
-        viewport.apply();
-        game.batch.setProjectionMatrix(camera.combined);
-        game.batch.begin();
-        game.batch.draw(background, 0, 0, WORLD_WIDTH, WORLD_HEIGHT);
-        game.batch.end();
-
-        stage.act(delta);
-        stage.draw();
-    }
-
-    @Override
-    public void resize(int width, int height) {
-        viewport.update(width, height, true);
-        stage.getViewport().update(width, height, true);
-    }
-
-    @Override
-    public void pause() {
-    }
-
-    @Override
-    public void resume() {
-    }
-
-    @Override
-    public void hide() {
-    }
-
-    @Override
-    public void dispose() {
-        stage.dispose();
+    protected void onBack() {
+        game.setScreen(returnScreen);
     }
 }

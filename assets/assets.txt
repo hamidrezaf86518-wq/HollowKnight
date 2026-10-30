@@ -774,6 +774,7 @@ music/CrystalPeaks.mp3
 music/FalseKnight.mp3
 music/MainMenu.mp3
 music/Victory.mp3
+saves/slot0.json
 saves/slot1.json
 sfx/damage.wav
 sfx/focus.wav

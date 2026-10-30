@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.hollowknight.i18n.Text;
 
 public class DialogueBox {
     private String[] lines;
@@ -110,7 +111,7 @@ public class DialogueBox {
         
         if (visibleChars >= fullText.length()) {
             font.setColor(Color.GRAY);
-            font.draw(batch, "[Enter]", boxX + boxWidth - 90, boxY + 30);
+            font.draw(batch, Text.ENTER_PROMPT.get(), boxX + boxWidth - 120, boxY + 30);
         }
     }
 

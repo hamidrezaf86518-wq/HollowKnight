@@ -1,157 +1,79 @@
 package com.hollowknight.view.screens;
 
-
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.Skin;
-import com.badlogic.gdx.scenes.scene2d.ui.Stack;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import com.badlogic.gdx.utils.viewport.StretchViewport;
-import com.badlogic.gdx.utils.viewport.Viewport;
 import com.hollowknight.HollowKnight;
+import com.hollowknight.i18n.Text;
+import com.hollowknight.view.ui.Theme;
 
 import static com.hollowknight.model.Constants.WORLD_HEIGHT;
 import static com.hollowknight.model.Constants.WORLD_WIDTH;
 
-
-public class MainMenuScreen implements Screen {
-    private final HollowKnight game;
-    private Viewport viewport;
-    private OrthographicCamera camera;
-    private Stage stage;
-    private Skin skin;
-    private Texture background;
-    private Texture logo;
-    private Texture rightLogo;
-    private Texture leftLogo;
+public class MainMenuScreen extends MenuScreen {
+    private final Texture logo;
+    private final Texture rightLogo;
+    private final Texture leftLogo;
 
     public MainMenuScreen(HollowKnight game) {
-        this.game = game;
-        camera = new OrthographicCamera();
-        viewport = new StretchViewport(WORLD_WIDTH, WORLD_HEIGHT,camera);
-        background = game.assetSystem.get("textures/Voidheart_menu_BG.png", Texture.class);
-        logo = game.assetSystem.get("textures/vheart_title_RU.png",Texture.class);
+        super(game);
+        logo = game.assetSystem.get("textures/vheart_title_RU.png", Texture.class);
         rightLogo = game.assetSystem.get("textures/team_cherry_logo_main_menu.png", Texture.class);
-        leftLogo = game.assetSystem.get("textures/Hidden_Dreams_Logo.png",Texture.class);
-        stage = new Stage(viewport);
-        skin = new Skin(Gdx.files.internal("ui/shade/skin/uiskin.json"));
+        leftLogo = game.assetSystem.get("textures/Hidden_Dreams_Logo.png", Texture.class);
     }
 
     @Override
-    public void show() {
-        Table table = new Table();
-        table.bottom().padBottom(50);
-        table.defaults().pad(5);
+    protected void build() {
+        Table root = new Table();
+        root.setFillParent(true);
+        root.bottom().padBottom(48f);
+        root.defaults().width(320f).height(42f).padTop(8f);
 
-        TextButton gameStartBtn = new TextButton("GAME START",skin);
-        TextButton settingsBtn = new TextButton("SETTINGS",skin);
-        TextButton guideBtn = new TextButton("GUIDE",skin);
-        TextButton achievementsBtn = new TextButton("ACHIEVEMENTS",skin);
-        TextButton quitBtn = new TextButton("QUIT",skin);
+        root.add(menuButton(Text.GAME_START.get(), () -> game.setScreen(new GameStartScreen(game)))).row();
+        root.add(menuButton(Text.GUIDE.get(), () -> game.setScreen(new GuideMenuScreen(game)))).row();
+        root.add(menuButton(Text.SETTINGS.get(), () -> game.setScreen(new SettingsMenuScreen(game, MainMenuScreen.this)))).row();
+        root.add(menuButton(Text.ACHIEVEMENTS.get(), () -> game.setScreen(new AchievementsScreen(game)))).row();
+        root.add(menuButton(Text.QUIT.get(), () -> Gdx.app.exit())).row();
 
-        table.add(gameStartBtn).width(300).height(40).row();
-        table.add(guideBtn).width(300).height(40).row();
-        table.add(settingsBtn).width(300).height(40).row();
-        table.add(achievementsBtn).width(300).height(40).row();
-        table.add(quitBtn).width(300).height(40).row();
+        stage.addActor(root);
+    }
 
-        Stack stack = new Stack();
-        stack.setFillParent(true);
-        stack.add(table);
-        game.audioSystem.playEnvironmentBGM("MainMenu");
-
-        stage.addActor(stack);
-        Gdx.input.setInputProcessor(stage);
-
-        gameStartBtn.addListener(new ClickListener(){
+    private TextButton menuButton(String text, Runnable action) {
+        TextButton button = Theme.button(text);
+        button.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(new GameStartScreen(game));
+                action.run();
             }
         });
-
-        guideBtn.addListener(new ClickListener(){
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(new GuideMenuScreen(game));
-            }
-        });
-
-        settingsBtn.addListener(new ClickListener(){
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(new SettingsMenuScreen(game,MainMenuScreen.this));
-            }
-
-        });
-
-        achievementsBtn.addListener(new ClickListener(){
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(new AchievementsScreen(game));
-            }
-        });
-
-        quitBtn.addListener(new ClickListener(){
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                Gdx.app.exit();
-            }
-        });
+        return button;
     }
 
     @Override
-    public void render(float delta) {
-        Gdx.gl.glClearColor(0,0,0,1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        game.audioSystem.update(delta);
-
-        float x = (WORLD_WIDTH-logo.getWidth()*0.8f)/2f;
-        float y = (WORLD_HEIGHT-logo.getHeight()*0.8f)/2f;
-
-        game.batch.setProjectionMatrix(camera.combined);
-
-        game.batch.begin();
-        game.batch.draw(background,0,0,WORLD_WIDTH,WORLD_HEIGHT);
-        game.batch.draw(logo,x,y+100,logo.getWidth()*0.8f,logo.getHeight()*0.8f);
-        game.batch.draw(rightLogo,WORLD_WIDTH-300,WORLD_HEIGHT-650,rightLogo.getWidth()*0.6f,rightLogo.getHeight()*0.6f);
-        game.batch.draw(leftLogo,200,WORLD_HEIGHT-610);
-        game.batch.end();
-
-        stage.act(delta);
-        stage.draw();
+    protected boolean handlesBack() {
+        return false;
     }
 
     @Override
-    public void resize(int width, int height) {
-        viewport.update(width,height,true);
-        stage.getViewport().update(width, height, true);
-    }
+    protected void drawBackdrop(Batch batch) {
+        batch.setColor(1f, 1f, 1f, 1f);
+        batch.draw(background, 0, 0, WORLD_WIDTH, WORLD_HEIGHT);
 
-    @Override
-    public void pause() {
+        batch.setColor(1f, 1f, 1f, 0.95f);
+        batch.draw(Theme.shade(), 0, 0, WORLD_WIDTH, WORLD_HEIGHT * 0.55f);
+        batch.setColor(1f, 1f, 1f, 1f);
 
-    }
+        float logoW = logo.getWidth() * 0.8f;
+        float logoH = logo.getHeight() * 0.8f;
+        float x = (WORLD_WIDTH - logoW) / 2f;
+        float y = (WORLD_HEIGHT - logoH) / 2f;
 
-    @Override
-    public void resume() {
-
-    }
-
-    @Override
-    public void hide() {
-
-    }
-
-    @Override
-    public void dispose() {
-
+        batch.draw(logo, x, y + 100f, logoW, logoH);
+        batch.draw(rightLogo, WORLD_WIDTH - 300f, WORLD_HEIGHT - 650f, rightLogo.getWidth() * 0.6f, rightLogo.getHeight() * 0.6f);
+        batch.draw(leftLogo, 200f, WORLD_HEIGHT - 610f);
     }
 }

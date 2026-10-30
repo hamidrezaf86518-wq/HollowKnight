@@ -1,57 +1,93 @@
 package com.hollowknight.view;
 
-
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
-import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.hollowknight.HollowKnight;
+import com.hollowknight.i18n.I18n;
+import com.hollowknight.i18n.Text;
+import com.hollowknight.model.GameData;
 import com.hollowknight.view.screens.GameScreen;
+import com.hollowknight.view.ui.Theme;
 
+import java.text.DateFormat;
+import java.util.Date;
 
-public class SaveCard extends Table{
+public class SaveCard extends Table {
     private final HollowKnight hollowKnight;
+    private final int slot;
 
-    public SaveCard(Skin skin, HollowKnight hollowKnight, int slot) {
-        super(skin);
+    public SaveCard(HollowKnight hollowKnight, int slot) {
         this.hollowKnight = hollowKnight;
-        this.defaults().pad(20).padTop(30);
+        this.slot = slot;
 
-        boolean occupied = hollowKnight.saveSystem.slotExists(slot);
+        GameData data = hollowKnight.saveSystem.slotExists(slot) ? hollowKnight.saveSystem.load(slot) : null;
+        boolean occupied = data != null;
 
-        Label statusLabel = new Label(occupied ? "SAVE FOUND" : "EMPTY SLOT", skin);
-        TextButton newBtn = new TextButton("NEW", skin);
-        TextButton loadBtn = new TextButton("LOAD", skin);
+        setBackground(Theme.card());
+        pad(14f, 24f, 14f, 18f);
+
+        Table info = new Table();
+        info.left();
+        Label name = Theme.label(Text.PROFILE.fmt(slot + 1), occupied ? "gold" : "heading");
+        info.add(name).left().row();
+
+        if (occupied) {
+            String stats = Text.PLAY_TIME.get() + "  " + Theme.formatTime(data.playTimeSeconds)
+                + "     " + Text.DEATHS.get() + "  " + data.deathCount;
+            info.add(Theme.label(stats, "small")).left().padTop(6f).row();
+            String date = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT, I18n.locale())
+                .format(new Date(data.savedAt));
+            info.add(Theme.label(date, "muted")).left().padTop(2f).row();
+        } else {
+            info.add(Theme.label(Text.EMPTY_SLOT.get(), "muted")).left().padTop(6f).row();
+        }
+
+        TextButton newBtn = Theme.button(Text.NEW.get());
+        TextButton loadBtn = Theme.button(Text.LOAD.get());
         loadBtn.setDisabled(!occupied);
-        loadBtn.setTouchable(occupied ? com.badlogic.gdx.scenes.scene2d.Touchable.enabled
-            : com.badlogic.gdx.scenes.scene2d.Touchable.disabled);
+        loadBtn.setTouchable(occupied ? Touchable.enabled : Touchable.disabled);
 
-        this.add(statusLabel).colspan(2).row();
-        this.add(newBtn).size(100,35);
-        this.add(loadBtn).size(100,35);
+        add(info).expandX().left();
+        add(newBtn).width(130f).height(42f).padRight(10f);
+        add(loadBtn).width(130f).height(42f);
 
-
-        newBtn.addListener(new ClickListener(){
+        newBtn.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                hollowKnight.saveSystem.deleteSlot(slot);
-                GameScreen gameScreen = new GameScreen(hollowKnight);
-                gameScreen.setSlot(slot);
-                hollowKnight.setScreen(gameScreen);
-            }
-        });
-
-        loadBtn.addListener(new ClickListener(){
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                if(hollowKnight.saveSystem.slotExists(slot)) {
-                    GameScreen gameScreen = new GameScreen(hollowKnight, hollowKnight.saveSystem.load(slot));
-                    gameScreen.setSlot(slot);
-                    hollowKnight.setScreen(gameScreen);
+                if (occupied) {
+                    Theme.confirm(getStage(), Text.OVERWRITE_TITLE.get(), Text.OVERWRITE_MESSAGE.get(), SaveCard.this::startNew);
+                } else {
+                    startNew();
                 }
             }
         });
+
+        loadBtn.addListener(new ClickListener() {
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+                startLoad();
+            }
+        });
+    }
+
+    private void startNew() {
+        hollowKnight.saveSystem.deleteSlot(slot);
+        GameScreen gameScreen = new GameScreen(hollowKnight);
+        gameScreen.setSlot(slot);
+        hollowKnight.setScreen(gameScreen);
+    }
+
+    private void startLoad() {
+        GameData data = hollowKnight.saveSystem.load(slot);
+        if (data == null) {
+            return;
+        }
+        GameScreen gameScreen = new GameScreen(hollowKnight, data);
+        gameScreen.setSlot(slot);
+        hollowKnight.setScreen(gameScreen);
     }
 }

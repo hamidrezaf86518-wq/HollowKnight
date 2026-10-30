@@ -402,6 +402,9 @@ public class GameScreen implements Screen {
 
     @Override
     public void show() {
+        if (isPaused) {
+            pauseMenu.open();
+        }
         Gdx.input.setInputProcessor(isPaused ? pauseMenu.getStage() : null);
         game.audioSystem.playEnvironmentBGM(inSecondArea ? SECOND_AREA_BGM : DEFAULT_AREA_BGM);
     }
@@ -458,8 +461,7 @@ public class GameScreen implements Screen {
             victoryScreen.render();
         }
         if(isPaused){
-            pauseMenu.getStage().act(delta);
-            pauseMenu.getStage().draw();
+            pauseMenu.render(delta);
         }
     }
 
@@ -486,6 +488,7 @@ public class GameScreen implements Screen {
         if (dialogueFont != null) dialogueFont.dispose();
         if (charmMenu != null) charmMenu.dispose();
         if (victoryScreen != null) victoryScreen.dispose();
+        if (pauseMenu != null) pauseMenu.dispose();
     }
 
     public World getWorld() { return world; }
@@ -494,7 +497,11 @@ public class GameScreen implements Screen {
     public boolean isPaused() { return isPaused; }
 
     public void setPaused(boolean paused) {
+        boolean opening = paused && !isPaused;
         isPaused = paused;
+        if (opening) {
+            pauseMenu.open();
+        }
         Gdx.input.setInputProcessor(paused ? pauseMenu.getStage() : null);
     }
 
